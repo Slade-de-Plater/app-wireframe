@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(166, 215, 221);
+  }
+
+h5 {
+    font-weight: bold;
+    font-family: 
+    
+}
+
+#navbar{
+    background-color: rgb(199, 247, 253)!important;
+}
+
+.cardname {
+
+}
+
+#taskName {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#assignedTo {
+    font-size: 25px;
+}
+
+#descriptionHeading {
+    font-size: 25px;
+}
