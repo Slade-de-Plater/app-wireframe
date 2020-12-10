@@ -43,8 +43,8 @@ newTaskForm.addEventListener('submit', (event) => {
         errorMessage.style.display = "none"
     }
 
- if(!validFormFieldInput(descriptionVal)){
-        errorMessage.innerHTML += "Invalid description";
+ if(!validFormFieldInput(dueDateVal)){
+        errorMessage.innerHTML += "Invalid date"
         errorMessage.style.display = "block"
     }else{
         errorMessage.style.display = "none"
