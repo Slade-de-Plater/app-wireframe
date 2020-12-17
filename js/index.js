@@ -2,8 +2,8 @@ import { TaskManager } from "./taskManager.js";
 // let TaskManager = require('./taskManager.js');
 
 const taskManager = new TaskManager;
-taskManager.addTask('jotham',)
-console.log(taskManager.tasks);
+// taskManager.addTask('jotham',)
+// console.log(taskManager.tasks);
 
 
 
@@ -33,7 +33,8 @@ newTaskForm.addEventListener('submit', (event) => {
     const dueDateVal = dueDate.value;
 
     taskManager.addTask(name, descriptionVal, assignedToVal, dueDateVal);
-
+    taskManager.render();
+    
 
 
     if (!validFormFieldInput(name)) {
@@ -67,11 +68,6 @@ newTaskForm.addEventListener('submit', (event) => {
 
     // Get the values of the inputs
 
-  /*   newTaskNameInput.value = '';
-    newTaskDescription.value = '';
-    newTaskAssignedTo.value = '';
-    newTaskDueDate.value = '';
- */
 
 
 
@@ -90,3 +86,4 @@ if (validFormFieldInput === true) {
 // console.log(taskManager.tasks);
 
 // console.log(taskManager.addTask());
+
