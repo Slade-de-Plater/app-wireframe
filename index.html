@@ -62,13 +62,10 @@
                                     </select>
 
                                     
-                    <input type="reset" value="Reset">
-                             <!--    </div>
-                                <br>
-                                <button type="button" id="saveChanges">Save Changes</button>
-                                <button type="button">cancel</button>-->
+                    
+                                </div>
+                                
 
-                                <!-- <button type="submit" id="submit">submit</button> -->
                                 <div id="alertMessage" style="display: none" class="alert alert-danger" role="alert">
                                     Error message
                                 </div> 
@@ -80,7 +77,7 @@
                 <div class="modal-footer" id="modal-footer">
                     <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
                     <!-- <button type="button" class="btn btn-primary" id="saveChanges">Save Changes</button> -->
-                   
+                    <input type="reset" value="Reset" form="userForm" class="btn btn-primary">
                     <button type="submit" class="btn btn-primary" id="submit" form="userForm">submit</button>
                 
                     <div id="alertMessage" style="display: none" class="alert alert-danger" role="alert">
@@ -103,7 +100,7 @@
     <br>
     <br>
     <br> -->
-    <div id="item-list" class="mx-auto list-group" style="width:375px">
+    <div id="item-list" class="mx-auto list-group" style="width:375px" data-task-id=${id}>
         <div class="card" style="width: 25rem;">
             <div class="card-body container">
                 <h5 class="d-flex justify-content-center"></h5>

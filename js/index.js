@@ -77,13 +77,35 @@ function validFormFieldInput(data) {
     return data !== null && data !== '';
 }
 
-if (validFormFieldInput === true) {
-  taskManager.addTask.call()
-}
 
 
 
-// console.log(taskManager.tasks);
+/* console.log(taskManager.tasks);
 
-// console.log(taskManager.addTask());
+console.log(taskManager.addTask()); */
 
+  
+const tasksList = document.querySelector('#item-list');
+
+
+tasksList.addEventListener('click', (event) => {
+    
+    if (event.target.classList.contains('done-button')) {
+       
+        const parentTask = event.target.parentElement.parentElement.parentElement.parentElement;
+console.log(parentTask)
+      
+        const taskId = Number(parentTask.dataset.taskId);
+
+      
+        const task = taskManager.getTaskById(taskId);
+console.log(task);
+ task.status = 'DONE';
+ 
+
+
+ taskManager.render(); 
+    
+       
+    }  
+});
