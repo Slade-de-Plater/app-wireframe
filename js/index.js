@@ -4,9 +4,10 @@ import { TaskManager } from "./taskManager.js";
 const taskManager = new TaskManager;
 // taskManager.addTask('jotham',)
 // console.log(taskManager.tasks);
+taskManager.load();
 
 
-
+taskManager.render();
 // Select the New Task Form
 const newTaskForm = document.querySelector('#userForm');
 
@@ -26,18 +27,27 @@ newTaskForm.addEventListener('submit', (event) => {
         Validation code here
     */
     
+   const taskNameVal = taskName.value;
+   const descriptionVal = description.value;
+   const assignedToVal = assignedTo.value;
+   const dueDateVal = dueDate.value;
 
-    const name = taskName.value;
-    const descriptionVal = description.value;
-    const assignedToVal = assignedTo.value;
-    const dueDateVal = dueDate.value;
 
-    taskManager.addTask(name, descriptionVal, assignedToVal, dueDateVal);
+    taskManager.addTask(taskNameVal, descriptionVal, assignedToVal, dueDateVal);
+
+    taskManager.save();
+
     taskManager.render();
+
+    taskNameVal.value = '';
+    descriptionVal.value = '';
+    assignedToVal.value = '';
+    dueDateVal.value  = '';
+  
     
 
 
-    if (!validFormFieldInput(name)) {
+    if (!validFormFieldInput(taskNameVal)) {
         errorMessage.innerHTML += "Invalid name input";
         errorMessage.style.display = "block"
     } else {
@@ -77,6 +87,8 @@ function validFormFieldInput(data) {
     return data !== null && data !== '';
 }
 
+  
+
 
 
 
@@ -102,10 +114,30 @@ console.log(parentTask)
 console.log(task);
  task.status = 'DONE';
  
-
+ 
+ taskManager.save();
 
  taskManager.render(); 
     
        
     }  
+
+    // Check if a "Delete" button was clicked
+    if (event.target.classList.contains('delete-button')) {
+        // Get the parent Task
+        const parentTask = event.target.parentElement.parentElement.parentElement;
+
+        // Get the taskId of the parent Task.
+        const taskId = Number(parentTask.dataset.taskId);
+
+        // Delete the task
+        taskManager.deleteTask(taskId);
+
+        // Save the tasks to localStorage
+        taskManager.save();
+
+        // Render the tasks
+        taskManager.render();
+    }    
+
 });
