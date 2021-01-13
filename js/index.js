@@ -11,6 +11,7 @@ taskManager.render();
 // Select the New Task Form
 const newTaskForm = document.querySelector('#userForm');
 
+
 // Add an 'onsubmit' event listener
 newTaskForm.addEventListener('submit', (event) => {
     // Prevent default action
@@ -39,10 +40,12 @@ newTaskForm.addEventListener('submit', (event) => {
 
     taskManager.render();
 
-    taskNameVal.value = '';
-    descriptionVal.value = '';
-    assignedToVal.value = '';
-    dueDateVal.value  = '';
+    taskName.value = '';
+    description.value = '';
+    assignedTo.value = '';
+    dueDate.value  = '';
+    
+
   
     
 
@@ -122,21 +125,21 @@ console.log(task);
        
     }  
 
-    // Check if a "Delete" button was clicked
+    
     if (event.target.classList.contains('delete-button')) {
-        // Get the parent Task
+     
         const parentTask = event.target.parentElement.parentElement.parentElement;
 
-        // Get the taskId of the parent Task.
+    
         const taskId = Number(parentTask.dataset.taskId);
 
-        // Delete the task
+     
         taskManager.deleteTask(taskId);
 
-        // Save the tasks to localStorage
+     
         taskManager.save();
 
-        // Render the tasks
+      
         taskManager.render();
     }    
 
