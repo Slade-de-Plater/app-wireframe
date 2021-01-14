@@ -23,7 +23,8 @@ const createTaskHtml = (id, name, description, assignedTo, dueDate, status) => {
 
 
 
-export class TaskManager {
+// export
+ module.exports = class TaskManager {
     constructor(currentId = 0) {
         this.tasks = [];
         this.currentId = currentId
