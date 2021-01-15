@@ -1,7 +1,7 @@
-import { TaskManager } from "./taskManager.js";
+// import { TaskManager } from "./taskManager.js";
 // let TaskManager = require('./taskManager.js');
 
-const taskManager = new TaskManager;
+const taskManager = new TaskManager();
 // taskManager.addTask('jotham',)
 // console.log(taskManager.tasks);
 taskManager.load();

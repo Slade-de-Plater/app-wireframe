@@ -1,34 +1,7 @@
 const TaskManager = require('../js/taskManager.js');
 const assert = require ('assert');
 
-// //addTask()
-// describe('Task Manager', () => {
-//     if('check that addTask is added to tasks array', () => {
-//       //setup
-//       let newTask = addTask;
-//       let tasksArray = this.tasks;
-//       //exercise
-//       const added = tasksArray(newTask)
-//       //verify
-//       assert.ok(added === true);
-//     });
-// });
 
-
-// //deleteTask()
-
-//   it('when clicked, task is deleted', function(){
-//  const taskManager = new TaskManager(0);
-//  taskManager.addTask(name, description, assignedTo, dueDate)
-//  let 
-//  assert.ok(taskManager.deleteTask(), );
- 
-//   }); 
-  
-
-
-
-// //getTaskId()
 
 
 console.log(TaskManager);
