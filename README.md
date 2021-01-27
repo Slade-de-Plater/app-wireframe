@@ -1,36 +1,36 @@
 # Task manager
 https://slade-de-plater.github.io/app-wireframe/
 
-## info
+## Info
 
-This project was devbeloped to manage tasks with in
+This project was developed to manage tasks within a team project. To keep track of tasks in a group project.
 
-## motivation
+## Motivation
 
-digitise to do list, so we made a task manager
+ We wanted to digitise a to do list, so we made a task manager
 
-## screenshots
+## Screenshots
 
-### task manager
+### Task manager web view
 
-### wire-frame
+### Wire-frame
 
-### code
+### Code
 
-#### html
+#### HTML
 
-#### css
+#### CSS
 
-#### javaScript
+#### JavaScript
 
 
-## features
+## Features
 
 * Submit tasks, with date, discirption, Assigned To, and status
 * You are able to quickly mark a task as DONE
 * delete tasks that are done. 
 
-## development environment
+## Development environment
 * ninjamock
 * Vs code
 * mocha
