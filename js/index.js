@@ -127,9 +127,9 @@ console.log(task);
 
     
     if (event.target.classList.contains('delete-button')) {
-     
+     console.log("hey")
         const parentTask = event.target.parentElement.parentElement.parentElement;
-
+console.log(parentTask)
     
         const taskId = Number(parentTask.dataset.taskId);
 

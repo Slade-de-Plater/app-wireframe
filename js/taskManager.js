@@ -1,7 +1,7 @@
 const createTaskHtml = (id, name, description, assignedTo, dueDate, status) => {
 
     const html =
-        `<div id="item-list" class="mx-auto" style="width:375px" data-task-id=${id}>
+        `<div id="item-list" class="mx-auto d-flex" data-task-id=${id}>
             <div class="card" style="width: 25rem;" >
                 <div class="card-body container">
                         <h5 class="d-flex justify-content-center">${name}</h5>
