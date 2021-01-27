@@ -26,9 +26,9 @@ digitise to do list, so we made a task manager
 
 ## features
 
-submit tasks, with date, discirption, assignie, and status
-you are able to quickly mark a task as DONE
-and delete tasks that are done. 
+* Submit tasks, with date, discirption, Assigned To, and status
+* You are able to quickly mark a task as DONE
+* delete tasks that are done. 
 
 ## development environment
 * ninjamock
