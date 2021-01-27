@@ -30,7 +30,15 @@ submit tasks, with date, discirption, assignie, and status
 you are able to quickly mark a task as DONE
 and delete tasks that are done. 
 
-## software used
+## development environment
+* ninjamock
+* Vs code
+* mocha
+* Live share
+* Live server
+* Zoom
+* slack
+
  
 
 
