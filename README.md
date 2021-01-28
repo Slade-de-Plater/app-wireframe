@@ -12,7 +12,7 @@ This project was developed to manage tasks within a team project. To keep track 
 ## Screenshots
 
 ### Task manager web view
-![webview](screenshots/taskmanager.png)
+![webview](screenshots/taskmanager.jpg)
 ### Wire-frame
 
 ### Code
