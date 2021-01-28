@@ -1,7 +1,7 @@
 const createTaskHtml = (id, name, description, assignedTo, dueDate, status) => {
 
     const html =
-        `<div id="item-list" class="mx-auto" style="width:375px" data-task-id=${id}>
+        `<div id="item-list" class="mx-auto d-flex" data-task-id=${id}>
             <div class="card" style="width: 25rem;" >
                 <div class="card-body container">
                         <h5 class="d-flex justify-content-center">${name}</h5>
@@ -9,7 +9,6 @@ const createTaskHtml = (id, name, description, assignedTo, dueDate, status) => {
                         <p class="card-text">${description}</p>
                          <p class="card-text">${dueDate}</p>
                         <p class="card-text">${status}</p>
-                        <a href="#" class="btn btn-primary">Edit</a>
                         <a href="#" class="btn btn-primary delete-button">Delete</a>
                         <div class="d-flex w-100 justify-content-end">
                           <button class="btn btn-outline-success done-button ${status === 'TODO' ? 'visible' : 'invisible'}">Mark As Done</button>

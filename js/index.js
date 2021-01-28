@@ -1,20 +1,16 @@
-// import { TaskManager } from "./taskManager.js";
-// let TaskManager = require('./taskManager.js');
+
 
 const taskManager = new TaskManager();
-// taskManager.addTask('jotham',)
-// console.log(taskManager.tasks);
+
 taskManager.load();
 
 
 taskManager.render();
-// Select the New Task Form
+
 const newTaskForm = document.querySelector('#userForm');
 
 
-// Add an 'onsubmit' event listener
 newTaskForm.addEventListener('submit', (event) => {
-    // Prevent default action
     event.preventDefault();
 
     // Select the inputs
@@ -90,14 +86,6 @@ function validFormFieldInput(data) {
     return data !== null && data !== '';
 }
 
-  
-
-
-
-
-/* console.log(taskManager.tasks);
-
-console.log(taskManager.addTask()); */
 
   
 const tasksList = document.querySelector('#item-list');
@@ -127,9 +115,9 @@ console.log(task);
 
     
     if (event.target.classList.contains('delete-button')) {
-     
+     console.log("hey")
         const parentTask = event.target.parentElement.parentElement.parentElement;
-
+console.log(parentTask)
     
         const taskId = Number(parentTask.dataset.taskId);
 
