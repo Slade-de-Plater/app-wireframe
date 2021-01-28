@@ -24,7 +24,7 @@ This project was developed to manage tasks within a team project. To keep track 
 ![webview](screenshots/css.jpg)
 
 #### JavaScript
-![webview](screenshots/indexjs.jpg)
+![webview](screenshots/indexjs.png)
 ![webview](screenshots/taskmamagerjs.jpg)
 
 ## Features
