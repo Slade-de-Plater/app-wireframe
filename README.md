@@ -14,15 +14,18 @@ This project was developed to manage tasks within a team project. To keep track 
 ### Task manager web view
 ![webview](screenshots/taskmanager.jpg)
 ### Wire-frame
-
+![webview](screenshots/taskform.jpg)
+![webview](screenshots/tasklayout.jpg)
 ### Code
 
 #### HTML
-
+![webview](screenshots/indexhtml.jpg)
 #### CSS
+![webview](screenshots/css.jpg)
 
 #### JavaScript
-
+![webview](screenshots/indexjs.jpg)
+![webview](screenshots/taskmamagerjs.jpg)
 
 ## Features
 
