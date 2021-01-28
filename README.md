@@ -5,7 +5,10 @@ https://slade-de-plater.github.io/app-wireframe/
 
 This project was developed to manage tasks within a team project. To keep track of tasks in a group project.
 
-## Motivation
+## steps to take
+* testing is run with mocha
+* must run "npm install" first
+* run npm test to run tests
 
  We wanted to digitise a to do list, so we made a task manager
 
@@ -13,6 +16,7 @@ This project was developed to manage tasks within a team project. To keep track 
 
 ### Task manager web view
 ![webview](screenshots/taskmanager.jpg)
+![model](screenshots/model.jpg)
 ### Wire-frame
 ![webview](screenshots/taskform.jpg)
 ![webview](screenshots/tasklayout.jpg)
