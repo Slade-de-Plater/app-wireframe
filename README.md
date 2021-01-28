@@ -46,4 +46,4 @@ This project was developed to manage tasks within a team project. To keep track 
 
 
 
- ![yay](https://memegenerator.net/img/instances/36368167/tonight-we-code-in-hell.jpg)
+
