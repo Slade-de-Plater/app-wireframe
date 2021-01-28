@@ -132,4 +132,7 @@ const createTaskHtml = (id, name, description, assignedTo, dueDate, status) => {
         }
     }
 }
-module.exports = TaskManager
+
+if (typeof module != "undefined") {
+module.exports = TaskManager;
+}
